@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+    El peso en otro planeta
+</title>
+<meta charset="utf-8" />
+<style>
+    body
+    {background-color: rgba(67, 10, 20, 0.683);}
+    h1
+    {color: rgb(212, 142, 142);}
+</style>
+</head>
+<body>
+<h1> <strong>Tu peso en otro planeta</strong> </h1>
+<script>
+var peso=  (parseInt(prompt("¿cuál es tu peso?")))
+var planeta =  ( prompt ("elije un planeta. \n marte es 1, jupiter es 2") )
+var g_tierra= 9.8; 
+var g_marte= 3.7;
+var g_jupiter= 24.8;
+var peso_total; 
+if  ( planeta == 1 )
+{peso_total= peso* g_marte/ g_tierra} 
+else if (planeta == 2)
+{peso_total= peso* g_jupiter/ g_tierra}
+else 
+{peso_total= "error"; }
+document.write ("tu peso en el planeta que elegiste es " + peso_total);
+ 
+</script>
+</body>
+</html>
